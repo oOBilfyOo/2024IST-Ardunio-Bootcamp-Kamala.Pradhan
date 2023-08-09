@@ -18,7 +18,11 @@
 String myString = "Hello world";
 int myInt = 3;
 bool mybool = false;
+<<<<<<< HEAD
+float myFloat = 3.14;
+=======
 float myFloat = 3.14
+>>>>>>> 0cffbf9a807d692df075681c8f7feaa58cebb688
 long myLong = 3.1415621475;
 
 
@@ -30,5 +34,12 @@ void setup() {
 }
 
 void loop() {
+<<<<<<< HEAD
+ mybool = true;
+ myString = mybool;
+ myInt = myFloat;
+ Serial.println (String(myLong));
+=======
 
+>>>>>>> 0cffbf9a807d692df075681c8f7feaa58cebb688
 }
