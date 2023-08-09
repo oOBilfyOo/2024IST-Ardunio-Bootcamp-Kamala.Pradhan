@@ -22,11 +22,20 @@
     https://github.com/TempeHS/TempeHS_Ardunio_Boilerplate/blob/main/Ardunio_Bootcamp/03.digitalWrite/LED_Schedmatic.png
 
 */
+static unsigned int myLED = 8;
+static unsigned int myLED2 = 13;
+bool myToggle = false;
 
 void setup() {
-
+Serial.begin(9600);
+Serial.println("serial monitor works");
+Serial.println("--------------------");
 }
 
 void loop() {
+  myToggle = !myToggle;
+digitalWrite(myLED, myToggle);
+digitalWrite(myLED2, myToggle);
+delay(1000);
 
 }
